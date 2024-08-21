@@ -1,9 +1,11 @@
 # Ignite
 A Place to store general NixOS-Configurations for different Environments.
 
+## ToDo's
+- Create Homemanager Configuration
 
----
-Bei Problemen mit dem SSH-Agent muss dieser vorerst manuell gestartet werden:
+## Notes
+In Case of Issues with the SSH-Agent check if its running. If not start it manually:
 eval "$(ssh-agent -s)"
 
 
