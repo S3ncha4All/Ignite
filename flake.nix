@@ -1,6 +1,6 @@
 {
   description = "Ignite basic config flake";
-  input = {
+  inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -11,7 +11,7 @@
   outputs = {self, nixpkgs, ...} @inputs:
     {
       nixosConfigurations = {
-        default = nixpkgs.lib.nixosSystem {
+        codeforge = nixpkgs.lib.nixosSystem {
 	  extraSpecialArgs = {inherit inputs;};
           modules = [
             ./flames/codeforge/configuration.nix
@@ -19,5 +19,5 @@
         };
       };
     };
-};
+}
 
