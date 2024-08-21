@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ../../modules/nixos/wsl.nix
+
   ];
 
   wsl.defaultUser = "ignite";
@@ -11,5 +11,14 @@
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
-  system.stateVersion = "24.05";
+
+
+  environment.systemPackages = with pkgs; [
+    neovim
+    git
+    wget
+    zig
+    jdk22
+    fzy
+   ];
 }
