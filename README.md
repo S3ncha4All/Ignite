@@ -1,2 +1,2 @@
 # Ignite
-A Place to store general NixOS Configuration for different Environments.
+A Place to store general NixOS-Configurations for different Environments.
