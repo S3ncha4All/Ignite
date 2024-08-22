@@ -14,5 +14,6 @@ A Place to store my general NixOS-Configurations for different Environments.
 ## Notes
 In Case of Issues with the SSH-Agent check if its running. If not start it manually:
 eval "$(ssh-agent -s)"
+!!!Mind the Braces!!!
 
 
