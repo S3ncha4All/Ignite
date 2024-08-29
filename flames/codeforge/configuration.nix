@@ -13,11 +13,6 @@
     git
     wget
     zig
-    jdk22
-    elixir
-    kotlin
-    gradle
-    maven
    ];
 
 
